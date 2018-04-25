@@ -16,6 +16,7 @@ body{
     height:100%;
     width:100px;
     background:rgb(0,0,15);
+    z-index:1;
 }
 .sidebar a{
     flex:1;
@@ -73,42 +74,53 @@ body{
     z-index: 0;
 }
 
-@media (max-width:479px) {
+@media (max-width:550px) {
+    .sidebar{
+      width: 55px;
+    }
+    .sidebar a{
+      writing-mode: vertical-lr;
+    }
     .section{
-        height:110vh;
+      left:55px;
+      height:110vh;
     }
     #intro img{
         transition:0.3s;
         position:fixed;
         transform:translate(-50%, -50%);
-        top:15vw;
         left:90vw;
-        width:65vw;
+        width:180vw;
+        top:56vw;
         z-index:0;
+    }
+    #intro .content{
+      top:5vw;
+      width:70vw;
     }
     #title{
         background:rgb(15,93,145);
-        height:20vw;
-        width:60vw;
+        transform: rotate(0deg);
+        height:63vw;
+        width:90vw;
         clip-path: polygon(0 0, 100% 0, 0 100%);
         z-index: 1;
     }
     #title h1{
-        margin-left:1%;
-        font-size:5vw;
-        letter-spacing: 0.6vw;
+        font-size: 12vw;
+        width:50vw;
     }
     #title p{
-        margin-top:1%;
-        margin-left:4%;
-        font-size: 1.4vw;
+      margin-top:1%;
+      margin-bottom: 1%;
+      font-size: 1.8vw;
     }
     #imgCover{
         position: absolute;
         height: 100%;
         width: 100%;
         background:rgb(45,50,52);
-        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 35%, 40% 0);
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 75%, 0 0);
         z-index: 0;
-    } q
+    }
 }
