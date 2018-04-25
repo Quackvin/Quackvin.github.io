@@ -96,7 +96,8 @@ body{
     }
     #intro .content{
       top:5vw;
-      width:70vw;
+      width:55vw;
+      font-size:15px;
     }
     #title{
         background:rgb(15,93,145);
