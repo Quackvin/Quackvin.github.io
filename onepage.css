@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    color:rgb(233,237,239);
+    transition:0.3s;
+}
+body{
+    overflow-x: hidden;
+}
+.sidebar{
+    position:fixed;
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    width:100px;
+    background:rgb(0,0,15);
+}
+.sidebar a{
+    flex:1;
+    color:rgb(233,237,239);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 20px;
+}
+.sidebar a:hover{
+    background-color: rgb(0,70,122);
+}
+.section {
+    position: relative;
+    left: 100px;
+    height: 100vh;
+    background:rgb(45,50,52);
+}
+.section .content{
+    position: relative;
+    padding:5%;
+    z-index: 1;
+}
+#intro img{
+    transition:0.3s;
+    position:fixed;
+    transform:translate(-50%, -50%);
+    top:15vw;
+    left:90vw;
+    width:65vw;
+    z-index:0;
+}
+#title{
+    background:rgb(15,93,145);
+    height:20vw;
+    width:60vw;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    z-index: 1;
+}
+#title h1{
+    margin-left:1%;
+    font-size:5vw;
+    letter-spacing: 0.6vw;
+}
+#title p{
+    margin-top:1%;
+    margin-left:4%;
+    font-size: 1.4vw;
+}
+#imgCover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:rgb(45,50,52);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 35%, 40% 0);
+    z-index: 0;
+}
+
+@media (max-width:479px) {
+    .section{
+        height:110vh;
+    }
+    #intro img{
+        transition:0.3s;
+        position:fixed;
+        transform:translate(-50%, -50%);
+        top:15vw;
+        left:90vw;
+        width:65vw;
+        z-index:0;
+    }
+    #title{
+        background:rgb(15,93,145);
+        height:20vw;
+        width:60vw;
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+        z-index: 1;
+    }
+    #title h1{
+        margin-left:1%;
+        font-size:5vw;
+        letter-spacing: 0.6vw;
+    }
+    #title p{
+        margin-top:1%;
+        margin-left:4%;
+        font-size: 1.4vw;
+    }
+    #imgCover{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background:rgb(45,50,52);
+        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 35%, 40% 0);
+        z-index: 0;
+    } q
+}

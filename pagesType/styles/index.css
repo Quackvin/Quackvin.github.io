@@ -1,0 +1,157 @@
+#heading{
+  position:absolute;
+  left:70%;
+  height:100%;
+  width:100%;
+  transform-origin:0 0;
+  transform: rotate(160deg);
+  background:rgb(15,93,145);
+  z-index:4;
+  transition:0.3s;
+}
+#main{
+    height:100vh;
+}
+#mainContent{
+  position:absolute;
+  left:10%;
+  padding:0%;
+  margin:0;
+  width:50%;
+  height:20vw;
+  z-index:6;
+  transition:0.3s;
+}
+#title{
+  position:absolute;
+  width:40vw;
+  overflow: hidden;
+  z-index: 6;
+}
+#title h1{
+  margin:1%;
+  font-size:5vw;
+  letter-spacing: 0.6vw;
+}
+#title p{
+  margin-top:1%;
+  margin-bottom: 1%;
+  font-size: 1.8vw;
+}
+#content{
+  position:absolute;
+  margin-left: 5vw;
+  top:25vw;
+  width:450px;
+  color:rgb(155,207,229);
+  z-index: 3;
+}
+.section{
+  position:absolute;
+  top:100vh;
+  height:50%;
+  width:100vw;
+  background-size:cover;
+  background-attachment: fixed;
+  z-index: 1;
+}
+#about{
+  background-image:url("../imgs/temp.jpg");
+}
+#pic{
+    position:fixed;
+    transform:translate(-50%, -50%);
+    top:15vw;
+    left:90vw;
+    width:65vw;
+    z-index:0;
+    transition:0.3s;
+}
+#mask{
+  transition:0.3s;
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+#triangle{
+  position:absolute;
+  left:50%;
+  height:43vh;
+  width:60vw;
+  transform-origin:0 0;
+  transform:rotate(20deg);
+  background:rgb(45,50,52);
+  z-index:1;
+}
+#square1{
+  position:absolute;
+  top:0%;
+  height:50%;
+  width:60%;
+  background:rgb(45,50,52);
+  z-index:2;
+}
+#square2{
+  position:absolute;
+  top:40vh;
+  height:60vh;
+  width:100vw;
+  background:rgb(45,50,52);
+  z-index:2;
+}
+@media (max-width:550px) {
+  #main{
+    left:45px;
+  }
+  #heading {
+    position: absolute;
+    transform-origin:0 0;
+    width: 130%;
+    height: 90%;
+    transform: rotate(145deg);
+    top: 0%;
+    left: 100%;
+    z-index: 3;
+  }
+  #title h1{
+    font-size: 12vw;
+  }
+  #title p{
+    margin-top:1%;
+    margin-bottom: 1%;
+    font-size: 1.8vw;
+  }
+  #content{
+    position:absolute;
+    width: auto;
+    top:70vw;
+  } 
+  #content h2{
+    width:63vw;
+  }
+  .section{
+    height:40%;
+  }
+  #pic{
+      width:180vw;
+      top:56vw;
+  }
+  #triangle {
+    position: absolute;
+    width: 142vw;
+    height: 90%;
+    transform-origin:0% 0%;
+    transform: rotate(45deg);
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+  }
+  #square1{
+    top:100.41vw;
+    width:100%;
+  }
+  #square2{
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+body{
+  all:unset;
+  background:rgb(45,50,52);
+  overflow-x:hidden;
+  font-family: "Lucida Console", Monaco, monospace;
+  color:rgb(233,237,239);
+}
+
+#sidebar{
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width:100px;
+  background:rgb(0,0,15);
+  z-index:5;
+}
+
+.sidebarItem{
+  flex:1;
+  color:rgb(233,237,239);
+  text-decoration: none;
+  padding-top: auto;
+  text-align: center;
+}
+.sidebarItem:hover{
+  background-color: rgb(0,70,122);
+}
+
+#main{
+  position: absolute;
+  left:100px;
+}
+
+@media (max-width:550px) {
+  #sidebar{
+    width: 55px;
+  }
+  .sidebarItem{
+    writing-mode: vertical-lr;
+  }
+  #main{
+    left:55px;
+  }
+}
