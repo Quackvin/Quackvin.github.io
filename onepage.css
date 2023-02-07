@@ -59,10 +59,29 @@ body{
     margin-left:4%;
     font-size: 1.4vw;
 }
+#roster_guide{
+    text-align: center;
+    vertical-align: bottom;
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 4%;
+}
+#roster_legend{
+    width:10px;
+    background-color: rgb(61, 68, 70);
+}
+#roster_legend p{
+    font-size: 15px;
+    color: #999;
+}
+#roster_legend h3{
+    font-size: 15px;
+    color: #999;
+}
 #roster_container{
     background-color:aliceblue;
+    margin-top: 10px;
     height: 200px;
-    margin-top: 25px;
     display: flex;
     flex-direction: row;
 }
@@ -73,7 +92,7 @@ body{
     padding: 5px 5px 5px 5px;
 }
 .roster_box p{
-    font-size: 10px;
+    font-size: 20px;
     color: #777;
     margin-bottom: 5px;
 }
@@ -84,9 +103,9 @@ body{
 }
 #ros_box_3 h3{
     font-size: 75px;
+    color:darkcyan;
 }
 #ros_box_3 p{
-    font-size: 15px;
     color: black;
 }
 
