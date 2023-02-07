@@ -44,14 +44,17 @@ function set_roster(){
     set_roster_cell($("#ros_box_5"), date, get_host_index(date), get_chef_index(date));
 }
 
+let host_roster = ['T','H','C']
+let chef_roster = ['K','C','T','H']
+
 function get_host_index(date){
-    let roster = ['T','H','C']
-    return roster[date.getWeek() % 3]
+    return host_roster[date.getWeek() % 3]
 }
 
 function get_chef_index(date){
-    let roster = ['K','C','T','H']
-    return roster[date.getWeek() % 4]
+    if(chef_roster[date.getWeek() % 4] == 'K')
+        return 'K'
+    return get_host_index(date)
 }
 
 function set_roster_cell(element, date, host, chef){
@@ -66,7 +69,7 @@ function date_to_str(date){
 }
 
 function get_next_monday(){
-    let today = new Date;
+    let today = new Date();
     let days_since_monday = today.getDay() - 1    
     let days_to_monday = 7-days_since_monday
     let next_monday = new Date(today.setDate(today.getDate() + days_to_monday));
