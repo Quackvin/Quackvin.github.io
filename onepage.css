@@ -28,36 +28,30 @@ body{
 .sidebar a:hover{
     background-color: rgb(0,70,122);
 }
-.section {
+.sectionbox {
+    margin-left: 100px;
     position: relative;
-    left: 100px;
-    height: 100vh;
     background:rgb(45,50,52);
+}
+.section {
+    height: 100vh;
 }
 .section .content{
     position: relative;
     padding:5%;
     z-index: 1;
 }
-#intro img{
-    transition:0.3s;
-    position:fixed;
-    transform:translate(-50%, -50%);
-    top:15vw;
-    left:90vw;
-    width:65vw;
-    z-index:0;
-}
 #title{
     background:rgb(15,93,145);
-    height:20vw;
-    width:60vw;
+    height:20vh;
+    width:100vw;
     clip-path: polygon(0 0, 100% 0, 0 100%);
+    padding-top: 10px;
     z-index: 1;
 }
 #title h1{
     margin-left:1%;
-    font-size:5vw;
+    font-size:3vw;
     letter-spacing: 0.6vw;
 }
 #title p{
@@ -65,13 +59,35 @@ body{
     margin-left:4%;
     font-size: 1.4vw;
 }
-#imgCover{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background:rgb(45,50,52);
-    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 35%, 40% 0);
-    z-index: 0;
+#roster_container{
+    background-color:aliceblue;
+    height: 200px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.roster_box{
+    flex: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px 5px 5px 5px;
+}
+.roster_box p{
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 5px;
+}
+.roster_box h3{
+    font-size: 50px;
+    color: black;
+    height: 40%;
+}
+#ros_box_3 h3{
+    font-size: 75px;
+}
+#ros_box_3 p{
+    font-size: 15px;
+    color: black;
 }
 
 @media (max-width:550px) {
@@ -84,20 +100,6 @@ body{
     .section{
       left:55px;
       height:110vh;
-    }
-    #intro img{
-        transition:0.3s;
-        position:fixed;
-        transform:translate(-50%, -50%);
-        left:90vw;
-        width:180vw;
-        top:56vw;
-        z-index:0;
-    }
-    #intro .content{
-      top:5vw;
-      width:55vw;
-      font-size:15px;
     }
     #title{
         background:rgb(15,93,145);
@@ -115,13 +117,5 @@ body{
       margin-top:1%;
       margin-bottom: 1%;
       font-size: 1.8vw;
-    }
-    #imgCover{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background:rgb(45,50,52);
-        clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 75%, 0 0);
-        z-index: 0;
     }
 }
