@@ -81,7 +81,7 @@ body{
 #roster_container{
     background-color:aliceblue;
     margin-top: 10px;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: row;
 }
@@ -109,7 +109,7 @@ body{
     color: black;
 }
 
-@media (max-width:550px) {
+@media (max-width:1025px) {
     .sidebar{
       width: 55px;
     }
@@ -136,5 +136,17 @@ body{
       margin-top:1%;
       margin-bottom: 1%;
       font-size: 1.8vw;
+    }
+    #roster_container{
+        flex-direction: column;
+    }
+    #roster_guide{
+        visibility: hidden;
+    }
+    #roster_legend{
+        visibility: hidden;
+    }
+    #ros_box_5{
+        padding-bottom: 50px;
     }
 }

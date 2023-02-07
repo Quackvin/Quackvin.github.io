@@ -64,7 +64,7 @@ function set_roster_cell(element, date, host, chef){
 }
 
 function date_to_str(date){
-    let month_names = ['January','Febuary','March','April','May','June','July','August','September','October','Novemeber','Decemnber'];
+    let month_names = ['January','February','March','April','May','June','July','August','September','October','Novemeber','Decemnber'];
     return `${date.getDate()} ${month_names[date.getMonth()]}`
 }
 
