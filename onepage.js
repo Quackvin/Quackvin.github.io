@@ -31,6 +31,9 @@ $(document).ready(function(){
     set_roster()
 });
 
+let host_roster = ['T','H','C']
+let chef_roster = ['K','C','T','H']
+
 function set_roster(){
     let date = next_monday_delta(-14);
     set_roster_cell($("#ros_box_1"), date, get_host_index(date), get_chef_index(date));
@@ -43,9 +46,6 @@ function set_roster(){
     date = next_monday_delta(14);
     set_roster_cell($("#ros_box_5"), date, get_host_index(date), get_chef_index(date));
 }
-
-let host_roster = ['T','H','C']
-let chef_roster = ['K','C','T','H']
 
 function get_host_index(date){
     return host_roster[date.getWeek() % 3]
