@@ -8,6 +8,7 @@
 }
 body{
     overflow-x: hidden;
+    background: rgb(45,50,52);;
 }
 .sidebar{
     position:fixed;
@@ -111,7 +112,12 @@ body{
 
 @media (max-width:1025px) {
     .sidebar{
-      width: 55px;
+      width: 40px;
+    }
+    .sectionbox {
+        margin-left: 40px;
+        position: relative;
+        background:rgb(45,50,52);
     }
     .sidebar a{
       writing-mode: vertical-lr;
@@ -137,16 +143,41 @@ body{
       margin-bottom: 1%;
       font-size: 1.8vw;
     }
+    .roster_body{
+        display: flex;
+        flex-direction: row;
+    }
     #roster_container{
         flex-direction: column;
+        width: 60vw;
     }
     #roster_guide{
-        visibility: hidden;
+        width: 30px;
+        writing-mode:vertical-lr;
+        margin-top: 0;
     }
     #roster_legend{
         visibility: hidden;
+        height: 0;
     }
     #ros_box_5{
-        padding-bottom: 50px;
+        padding-bottom: 25px;
+    }
+    .roster_box p{
+        font-size: 15px;
+        color: #777;
+        margin-bottom: 0;
+    }
+    .roster_box h3{
+        font-size: 40px;
+        color: black;
+        height: 40%;
+    }
+    #ros_box_3 p{
+        color: black;
+    }
+    #ros_box_3 h3{
+        font-size: 60px;
+        color:darkcyan;
     }
 }
